@@ -39,4 +39,8 @@ stdenv.mkDerivation (finalAttrs: {
     install -D impureTest $out/bin/impureTest
   '';
   inherit target;
+
+  meta = {
+    mainProgram = "impureTest";
+  };
 })
