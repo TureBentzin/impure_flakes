@@ -1,3 +1,3 @@
 #!@shell@
 
-echo Hello world
+echo Hello @target@
