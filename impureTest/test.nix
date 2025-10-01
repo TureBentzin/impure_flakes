@@ -6,7 +6,7 @@ runCommand "tes"
 } '' 
   (
     set -x
-    [[ "Hello world!" == "$(${lib.getExe impureTest})" ]]
+    [[ "Hello ${impureTest.target}" == "$(${lib.getExe impureTest})" ]]
   )
   touch $out
 ''
